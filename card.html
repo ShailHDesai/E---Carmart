@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details - E-Carmart</title>
+    <link rel="stylesheet" href="package.css"> <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="card.css"> <!-- Payment Page Specific Stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo2.png" alt="Carmart Logo" class="header-logo">
+            <h1 class="header-title">E-Carmart</h1>
+        </div>
+    </header>
+    <main>
+        <section class="payment-container">
+            <h2 id="page-title">PLEASE INSERT YOUR PAYMENT METHOD</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name-on-card">Name on Card:</label>
+                    <input type="text" id="name-on-card" name="nameOnCard" required>
+                </div>
+                <div class="form-group">
+                    <label>Card Type:</label>
+                    <input type="radio" id="debit" name="paymentType" value="Debit" required>
+                    <label for="debit">Debit</label>
+                    <input type="radio" id="credit" name="paymentType" value="Credit" required>
+                    <label for="credit">Credit</label>
+                </div>
+                <div class="form-group">
+                    <label>Please Enter Your Credit Card Number:</label>
+                    <input type="text" id="card-number-part1" name="cardNumberPart1" maxlength="4" required>
+                    <input type="text" id="card-number-part2" name="cardNumberPart2" maxlength="4" required>
+                    <input type="text" id="card-number-part3" name="cardNumberPart3" maxlength="4" required>
+                    <input type="text" id="card-number-part4" name="cardNumberPart4" maxlength="4" required>
+                </div>
+                <div class="form-group">
+                    <label>Please Enter Your Expiry Date (MM/YY):</label>
+                    <input type="text" id="expiry-month" name="expiryMonth" maxlength="2" placeholder="MM" required>
+                    <span>/</span>
+                    <input type="text" id="expiry-year" name="expiryYear" maxlength="2" placeholder="YY" required>
+                </div>
+                <div class="form-group">
+                    <label>Please Enter Your 3-Digit CVV Number:</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" required>
+                </div>
+                <div class="form-note">
+                    <p>For One-Time Payment customers, we request you to please visit our location for the pickup, as we don’t accept amounts over $5000.00 on our website. We are sorry for the inconvenience.</p>
+                </div>
+                <button type="submit" id="submit-button">Next</button>
+            </form>
+        </section>
+    </main>
+    <script src="card-script.js"></script>
+</body>
+</html>

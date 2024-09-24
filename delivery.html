@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Carmart Survey</title>
+  <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="images/logo2.png" alt="Carmart Logo" class="header-logo">
+    <h1 class="header-title">E-Carmart Survey</h1>
+  </div>
+</header>
+
+<div class="container">
+  <form id="deliveryForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <p>Please Enter Your Coordinates:</p>
+    <label for="latitude">Latitude:</label>
+    <input type="number" id="latitude" name="latitude" required step="any">
+
+    <label for="longitude">Longitude:</label>
+    <input type="number" id="longitude" name="longitude" required step="any">
+
+    <p>Please select vehicle type:</p>
+    <select name="vehicleType" id="vehicleType" required>
+      <option value="">Select Vehicle Type</option>
+      <option value="SUV">SUV</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Compact">Compact</option>
+      <option value="Sports">Sports</option>
+      <option value="EV">Electric Vehicle (EV)</option>
+    </select>
+
+    <p>Please select delivery type:</p>
+    <div class="delivery-options">
+      <label class="delivery-option">
+        <input type="radio" name="deliveryType" value="Dealer Drive" checked>
+        <img src="images/driver.png" alt="Dealer Drive" class="delivery-image"> Dealer Drive
+      </label>
+      <label class="delivery-option">
+        <input type="radio" name="deliveryType" value="Truck Delivery">
+        <img src="images/shipping.png" alt="Truck Delivery" class="delivery-image"> Truck Delivery
+      </label>
+    </div>
+
+    <div class="qualification-message" id="qualificationMessage"></div>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>Lookup your coordinates <a href="https://www.latlong.net/" target="_blank">here</a>.</p>
+</div>
+
+<script src="delivery-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Inventory - E-CarMart</title>
+    <link rel="stylesheet" href="honda.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-content">
+                <img src="images/logo2.png" alt="E-CarMart Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-btn">Used Inventory</a></li>
+                        <li><a href="#" class="nav-btn">Certified Inventory</a></li>
+                        <li><a href="#" class="nav-btn">Sales</a></li>
+                        <li><a href="#" class="nav-btn">Finance</a></li>
+                        <li><a href="#" class="nav-btn">My Account</a></li>
+                    </ul>
+                </nav>
+                <div id="search-container">
+                    <input type="text" id="search-bar" placeholder="Search for a vehicle...">
+                    <button type="button" onclick="searchVehicles()">Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="sidebar">
+                <div class="sidebar-header">Manufacturer</div>
+                <div class="manufacturer-list">
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Toyota')">Toyota</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Honda')">Honda</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Mazda')">Mazda</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Chevrolet')">Chevrolet</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Hyundai')">Hyundai</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Ford')">Ford</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Tesla')">Tesla</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Stellantis')">Stellantis</button>
+                </div>
+            </div>
+            <div id="main-content">
+                <div class="vehicle-display">
+                    <img id="vehicle-image" src="images/civic.png" alt="Honda Civic" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <div id="vehicle-information">
+                            <!-- Dynamic vehicle information will be inserted here by your JavaScript -->
+                        </div>
+                        <div id="price-section">
+                            <button type="button" id="add-to-garage-main-button" data-vehicle-id="1" class="action-btn">Add to Garage</button>
+                            <button type="button" class="action-btn">Speak with Sales Representative</button>
+                            <button type="button" class="action-btn">Submit Counter-Offer</button>
+                          </div>                          
+                    </div>
+                </div>
+                <div id="reviews-section">
+                    <p>View our existing customer reviews and also post your own review.</p>
+                    <button type="button" id="reviews-button">Reviews</button>
+                    <!-- Dynamic reviews will be inserted here by your JavaScript -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+    <script src="honda-script.js"></script>
+</body>
+</html>

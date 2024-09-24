@@ -1,0 +1,156 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header-container {
+    background-color: #003366; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+    height: 60px;
+}
+
+.header-title {
+    color: #FFD700; /* Yellow color for the title */
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Reviews section styles */
+#reviews-section {
+    margin: 20px;
+}
+
+.review-entry {
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #add8e6; /* Sky blue border */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.review-entry .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Form styles */
+#review-form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+#new-review-form h2 {
+    margin-bottom: 20px;
+}
+
+#new-review-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#new-review-form input[type="text"],
+#new-review-form input[type="number"],
+#new-review-form textarea,
+#new-review-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Rating styles modification */
+.rating {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.rating > input[type="radio"] {
+    display: none;
+}
+
+.rating > label {
+    cursor: pointer;
+    font-size: 30px;
+    color: transparent;
+    background-image: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input[type="radio"]:checked ~ label {
+    color: transparent;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7); /* Golden text shadow on hover */
+}
+
+/* Sparkle animation removed from stars hover since we're using a text-shadow effect */
+
+/* Button styles modification */
+#new-review-form button {
+    background-color: #007bff; /* AI Blue background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#new-review-form button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 123, 255, 0.5); /* Glowing shadow effect */
+    transform: translateY(-2px); /* Button lifts up when hovered */
+    background-image: linear-gradient(to right, #007bff, #33bfff, #007bff); /* Sparkly gradient effect */
+    background-size: 400%; /* Large size to allow a shine effect */
+    animation: sparklingButton 3s linear infinite; /* Animated background for sparkly effect */
+}
+
+@keyframes sparklingButton {
+    0% { background-position: 100% 0; }
+    50% { background-position: 0 100%; }
+    100% { background-position: 100% 0; }
+}
+
+/* Button styles */
+#new-review-form button {
+    background-image: linear-gradient(to right, #007bff, #33bfff); /* Gradient background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+#new-review-form button:hover {
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px); /* Slight lift */
+}

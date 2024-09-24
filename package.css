@@ -1,0 +1,100 @@
+/* package.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.header-title {
+    margin-left: 20px;
+    color: #333;
+}
+
+.payment-details-title-container {
+    background-color: #fffbe0; /* Light yellow background */
+    padding: 10px 0;
+}
+
+.payment-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#page-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    padding: 0 50px;
+}
+
+.payment-option {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.payment-option img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    margin-bottom: 15px;
+}
+
+.payment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s, font-weight 0.3s; /* Added transition for smooth effect */
+}
+
+.payment-button:hover {
+    background: linear-gradient(45deg, #00dbde, #fc00ff); /* Sparkling AI blue gradient */
+    font-weight: bold; /* Make text bold */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.payment-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.5);
+}
+
+.payment-option p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+}

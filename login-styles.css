@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* High-tech gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 320px; /* Adjusted for a more standard login form width */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+.login-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically if needed */
+}
+
+
+.login-header img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #719ECE; /* Focus color */
+    box-shadow: 0 0 8px 0 #719ECE;
+}
+
+.login-button {
+    background-color: #719ECE; /* Modern blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.login-button:hover {
+    background-color: #5a8dba; /* Darker shade for hover */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #719ECE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #5a8dba;
+    text-decoration: underline;
+}

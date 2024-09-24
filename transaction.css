@@ -1,0 +1,199 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Set base font properties */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #eaeaea; /* Background color to distinguish the page content */
+}
+
+/* Header styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: #004a80; /* Adjust to your brand color */
+    padding: 10px 20px;
+}
+
+.header-logo {
+    height: 60px; /* Adjust to fit your logo */
+    margin-right: 20px;
+}
+
+.header-title {
+    color: white;
+    font-size: 26px; /* Slightly larger for better visibility */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center main content */
+}
+
+.transaction-container {
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 2px 10px rgba(0, 0,0, 0.2); /* Softer shadow for depth */
+    max-width: 1200px; /* Max-width for structure */
+    width: 100%; /* Responsive width */
+    min-height: 500px; /* Minimum height for structure */
+    margin: 40px auto; /* Centering the container */
+}
+
+.transaction-section {
+    width: 100%; /* Use full width of the container */
+}
+
+.transaction-image {
+    display: none; /* Hide the image on mobile by default */
+}
+
+.transaction-image img {
+    max-width: 100%; /* Full width within the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the title bar */
+#page-title {
+    font-weight: bold;
+    background-color: #398ee8b6; /* Blue background for the title bar */
+    padding: 20px 0; /* Ample padding for visual comfort */
+    color: rgb(0, 0, 0); /* Text color for visibility */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Match the design */
+    text-align: center; /* Center the title text */
+}
+
+/* Vehicle information and pricing section */
+.vehicle-info {
+    text-align: center; /* Center the content */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.vehicle-info img {
+    max-width: 30%; /* Limiting the maximum width of the car image */
+    display: block;
+    margin: 0 auto; /* Centering the car image */
+}
+
+/* Price section */
+.price-section {
+    font-size: 22px;
+    color: #d9534f; /* Red color for emphasis */
+    margin-bottom: 30px; /* Space below the price */
+}
+
+/* Section for transaction details */
+.transaction-details {
+    background: #f9f9f9; /* Light background for the details section */
+    border: 1px solid #ddd; /* Subtle border */
+    padding: 20px; /* Padding for spacing */
+    margin-bottom: 20px; /* Space below the section */
+    font-size: 18px; /* Adjusting font size */
+}
+
+ul {
+    border-top: 2px solid #333; /* Visual separator */
+    padding-top: 15px; /* Space above the first item */
+}
+
+li {
+    font-size: 18px; /* Readability size */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.subtotal {
+    font-weight: bold; /* Highlight the subtotal */
+    border-top: 2px solid #333; /* Visual separator */
+    padding-top: 15px; /* Space above the subtotal */
+}
+
+/* Disclaimer styling */
+.disclaimer {
+    font-size: 16px; /* Readable but smaller font size */
+    color: #666; /* Muted color for less emphasis */
+    margin-bottom: 30px; /* Space below the disclaimer */
+}
+
+/* Adjust button styles to match design */
+button {
+    font-size: 18px;
+    padding: 10px 20px; /* Adjusting padding to match design */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners for buttons */
+    transition: background-color 0.3s ease;
+    width: auto; /* Auto width for content sizing */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.cancel-btn {
+    background-color: #dc3545; /* Red for cancel */
+    color: white;
+    margin-right: 10px; /* Space between cancel and proceed buttons */
+}
+
+.proceed-btn {
+    background-color: #28a745; /* Green for proceed */
+    color: white;
+}
+
+/* Hover effects for buttons */
+.cancel-btn:hover, .proceed-btn:hover {
+    opacity: 0.9; /* Slight opacity for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .transaction-container {
+        flex-direction: column;
+        max-width: 800px; /* Adjust max-width for medium screens */
+    }
+
+    .transaction-section,
+    .transaction-image {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .transaction-image {
+        display: block; /* Show the image for larger screens */
+        margin-top: 30px; /* Space above the image */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        margin-top: 10px;
+        font-size: 22px; /* Adjust header title for small screens */
+    }
+
+    .transaction-container {
+        padding: 20px; /* Less padding on smaller screens */
+        margin: 20px auto; /* Less margin on smaller screens */
+    }
+
+    .transaction-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cancel-btn, .proceed-btn {
+        width: 100%; /* Full width for buttons */
+        margin: 10px 0; /* Space between buttons */
+    }
+}
+

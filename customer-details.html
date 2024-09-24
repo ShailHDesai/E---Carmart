@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information - Carmart</title>
+    <link rel="stylesheet" href="customer-details.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo2.png" alt="Carmart Logo" class="header-logo">
+            <h1 class="header-title">E - Carmart</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <form class="customer-form">
+                <fieldset>
+                    <legend>PERSONAL INFORMATION</legend>
+                    <div class="input-group">
+                        <label for="firstName">
+                            <img src="images/profile.png" alt="" class="input-icon">First Name
+                        </label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">
+                            <img src="images/profile1.png" alt="" class="input-icon">Last Name
+                        </label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="ssn">
+                            <img src="images/password.png" alt="" class="input-icon">Last 4 Digits of your Social Security Number (SSN)
+                        </label>
+                        <input type="text" id="ssn" name="ssn" pattern="\d{4}" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">
+                            <img src="images/add-contact.png" alt="" class="input-icon">Contact Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">
+                            <img src="images/email.png" alt="" class="input-icon">Email Address
+                        </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="license">
+                            <img src="images/id.png" alt="" class="input-icon">Please Upload Your License ID Document (PDF Format)
+                        </label>
+                        <input type="file" id="license" name="license" accept="application/pdf" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="address-info">
+                    <legend>ADDRESS DETAILS</legend>
+                    <div class="input-group">
+                        <label for="address1">
+                            <img src="images/house.png" alt="" class="input-icon">Street Address 1
+                        </label>
+                        <input type="text" id="address1" name="address1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="address2">
+                            <img src="images/directions.png" alt="" class="input-icon">Street Address 2
+                        </label>
+                        <input type="text" id="address2" name="address2">
+                    </div>
+                    <div class="input-group">
+                        <label for="state">
+                            <img src="images/united-states-of-america.png" alt="" class="input-icon">State
+                        </label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="country">
+                            <img src="images/globe.png" alt="" class="input-icon">Country
+                        </label>
+                        <select id="country" name="country" required>
+                            <!-- Add country options here -->
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="zipcode">
+                            <img src="images/zip-code.png" alt="" class="input-icon">Zip Code
+                        </label>
+                        <input type="text" id="zipcode" name="zipcode" required>
+                    </div>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="button" onclick="window.history.back();">RETURN</button>
+                    <button type="submit">NEXT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="customer-details-script.js"></script>
+</body>
+</html>

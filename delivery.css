@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #005a87;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header-title {
+    font-size: 2rem;
+}
+
+/* Main Container Styles */
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Delivery Options Styles */
+.delivery-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.delivery-option {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.delivery-image {
+    width: 100px; /* Adjust as needed */
+}
+
+/* Button Styles */
+input[type="submit"] {
+    padding: 15px 20px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #005a87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #003f5c;
+}
+
+/* Qualification Message Styles */
+.qualification-message {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container, .container {
+        width: 95%;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .delivery-options {
+        flex-direction: column;
+    }
+
+    .delivery-image {
+        margin-bottom: 10px;
+    }
+}

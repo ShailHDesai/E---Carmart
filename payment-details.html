@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details - E-Carmart</title>
+    <link rel="stylesheet" href="package.css"> <!-- Updated CSS file link -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo2.png" alt="Carmart Logo" class="header-logo">
+            <h1 class="header-title">E-Carmart</h1>
+        </div>
+    </header>
+    <main>
+        <section class="payment-container">
+            <h2 id="page-title">PAYMENT DETAILS</h2>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <img src="images/pay-as-you-go.png" alt="Pay As You Go">
+                    <button class="payment-button blue-button" onclick="selectPackage('payAsYouGo')">Pay As You Go</button>
+                    <p>Customer will pay on a week-by-week basis.</p>
+                </div>
+                <div class="payment-option">
+                    <img src="images/lease.png" alt="Lease">
+                    <button class="payment-button blue-button" onclick="selectPackage('lease')">Lease</button>
+                    <p>The customer will pay on a 24 Months or 36 Months basis.</p>
+                </div>
+                <div class="payment-option">
+                    <img src="images/finance.png" alt="Finance">
+                    <button class="payment-button blue-button" onclick="selectPackage('finance')">Finance</button>
+                    <p>Customers can pay a specific amount today, and the rest of the cost will be calculated based on the market cost.</p>
+                </div>
+                <div class="payment-option">
+                    <img src="images/one-time-payment.png" alt="One-Time Payment">
+                    <button class="payment-button blue-button" onclick="selectPackage('oneTime')">One-Time Payment</button>
+                    <p>The customer needs to pay the full amount today.</p>
+                </div>
+                <div class="payment-option">
+                    <img src="images/talk-to-agent.png" alt="Talk to Agent">
+                    <button class="payment-button blue-button" onclick="selectPackage('talkToAgent')">Talk to Agent</button>
+                    <p>Our Sales Representatives can better assist you with which package to opt for based on your financial requirements.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Include the payment-details-script.js file here -->
+    <script src="payment-details-script.js"></script>
+</body>
+</html>

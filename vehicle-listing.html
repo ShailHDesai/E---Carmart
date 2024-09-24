@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-CarMart</title>
+    <link rel="stylesheet" href="vehicle-listing.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/logo2.png" alt="E-CarMart Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-btn">Used Inventory</a></li>
+                    <li><a href="#" class="nav-btn">Certified Inventory</a></li>
+                    <li><a href="#" class="nav-btn">Sales</a></li>
+                    <li><a href="#" class="nav-btn">Finance</a></li>
+                    <li><a href="#" class="nav-btn">My Account</a></li>
+                </ul>
+            </nav>
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search for a vehicle...">
+                <button type="button" onclick="searchVehicles()">Search</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="sidebar">
+                <div class="sidebar-header">Manufacturer</div>
+                <div class="manufacturer-list">
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Toyota')">Toyota</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Honda')">Honda</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Mazda')">Mazda</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Chevrolet')">Chevrolet</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Hyundai')">Hyundai</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Ford')">Ford</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Tesla')">Tesla</button>
+                    <button type="button" class="manufacturer-btn" onclick="filterVehicles('Stellantis')">Stellantis</button>
+                </div>
+            </div>
+            <div id="main-content">
+                <img src="images/Big Car.png" alt="Vehicle Image" class="vehicle-image">
+                <h1>PICK A VEHICLE OF YOUR CHOICE</h1>
+                <!-- Additional content will be loaded here -->
+            </div>
+        </main>
+
+        <footer>
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+
+    <script src="vehicle-listing-script.js"></script>
+</body>
+</html>

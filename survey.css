@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f3f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #111827; /* Dark background for header */
+    padding: 10px 0;
+    color: white;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: start; /* Align logo to the left */
+    align-items: center;
+}
+
+.header-logo {
+    height: 60px; /* Increase logo size for visibility */
+    margin-right: 20px;
+}
+
+.header-title {
+    font-size: 2.5em; /* Make the title larger and more prominent */
+    font-weight: normal;
+    margin: 0;
+    color: #10b981; /* A greenish shade for a techy feel */
+}
+
+.container {
+    width: 60%; /* Adjust width for better spacing */
+    margin: 50px auto;
+    background: #1f2937; /* A more modern dark shade for the form background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1em;
+    color: #9ca3af; /* Lighter text for contrast on the dark background */
+    margin-bottom: 10px;
+}
+
+input[type=text], 
+input[type=email], 
+textarea {
+    background: #111827; /* Dark input backgrounds */
+    padding: 15px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 8px;
+    color: #fff; /* White text */
+    box-shadow: inset 5px 5px 10px #0b0e11, /* Neumorphism effect */
+                inset -5px -5px 10px #23262c;
+    transition: box-shadow 0.3s;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+textarea:focus {
+    box-shadow: inset 2px 2px 2px #0b0e11, /* Adjusted for a more subtle focus effect */
+                inset -2px -2px 2px #23262c;
+    outline: none;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    letter-spacing: 1px;
+    background: linear-gradient(145deg, #34d399, #059669); /* Gradient for the submit button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 5px 5px 20px #003d33; /* Shadow for a 'lifted button' effect */
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(145deg, #2dd4bf, #0d9488); /* Slightly lighter gradient on hover */
+    box-shadow: 2px 2px 15px #006d5b;
+    transform: translateY(-3px);
+}
+
+input[type=submit]:active {
+    transform: translateY(1px);
+    box-shadow: inset 1px 1px 2px #003d33, /* Pressed button effect */
+                inset -1px -1px 2px #005d53;
+}

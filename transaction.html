@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details - Carmart</title>
+    <link rel="stylesheet" href="transaction.css"> <!-- Make sure to link your correct CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo2.png" alt="Carmart Logo" class="header-logo">
+            <h1 class="header-title">E - Carmart</h1> <!-- Title added for consistency -->
+        </div>
+    </header>
+    <main>
+        <section class="transaction-container">
+            <div class="transaction-section">
+              <h2 id="page-title">TRANSACTION PAGE</h2>
+              <div class="vehicle-info">
+                  <img src="images/civic.png" alt="Car Image" id="car-image">
+                  <div class="price-section" id="price-section">
+                      <!-- Price details will be populated here by JavaScript -->
+                  </div>
+              </div>
+              <div class="transaction-details" id="transaction-details">
+                  <!-- Transaction details will be populated here by JavaScript -->
+              </div>
+              <p class="disclaimer">
+                  Some fees stated in the Transaction Calculated are standard and are not related to the vehicle you are purchasing. For more details about your transaction cost, you can chat with our chatbot or talk to our Sales Representatives.
+              </p>
+              <div class="transaction-actions">
+                  <button type="button" class="cancel-btn" id="cancel-deal">Cancel Deal</button>
+                  <button type="button" class="proceed-btn" id="proceed-payment">Proceed To Payment Details</button>
+              </div>
+            </div>
+            <div class="transaction-image">
+              <img src="images/transaction.png" alt="Transaction Details Image" id="transaction-image" />
+            </div>
+        </section>
+    </main>
+    <script src="transaction-script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
